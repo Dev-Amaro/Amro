@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: auto;
+}
+body{
+    background:rgb(37,37,39);
+}
+.te{
+    margin-top: 5%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-size: 50px;
+    color: white;
+}
+p{
+    color: white;
+    text-align: center;
+}
+button{
+    margin-left: 42%;
+}
+.n{
+    margin-left: 0%;
+}
+.heart {
+    margin: 100px;
+    background-color: red;
+    height: 200px;
+    transform: rotate(-45deg);
+    width: 200px;
+    position: relative;
+    margin-left: 42%;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.heart:before {
+    top: -100px;
+}
+
+.heart:after {
+    left: 100px;
+}
+@media(max-width: 600p){
+    .heart {
+        margin-left: 42%;
+    }
+    @media(min-widht: 375px){
+        .heart{
+            margin-left: 35%;
+        }
+    }
+}
